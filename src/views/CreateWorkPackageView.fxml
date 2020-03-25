@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <Pane prefHeight="500.0" prefWidth="243.0" style="-fx-background-color: #1b6cd7;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="16.0" layoutY="25.0" prefHeight="37.0" prefWidth="212.0" text="Project Counter FX" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="92.0" fitWidth="110.0" layoutX="71.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/workpackage_96px.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="43.0" layoutY="31.0" prefHeight="27.0" prefWidth="193.0" text="Create a new Project">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="89.0" prefHeight="39.0" prefWidth="195.0" text="Work Package Name: ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="WPNameTextField" layoutX="229.0" layoutY="96.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="43.0" layoutY="155.0" prefHeight="39.0" prefWidth="151.0" text="Task description:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="describtionTextArea" layoutX="229.0" layoutY="148.0" prefHeight="115.0" prefWidth="347.0" />
+            <Button id="greenButton" fx:id="createNewWPButton" layoutX="229.0" layoutY="289.0" mnemonicParsing="false" onAction="#onCreateNewWorkPackage" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: #99ffcc;" text="Create new  Workpackage">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button id="redButton" fx:id="goBackButton" layoutX="657.0" layoutY="32.0" mnemonicParsing="false" onAction="#goBack" text="Go Back" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

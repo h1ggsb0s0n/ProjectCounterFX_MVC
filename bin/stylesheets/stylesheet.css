@@ -1,0 +1,45 @@
+#greenButton {
+    -fx-background-color:  #99ffcc;
+   
+}
+
+#greenButton:hover{
+	-fx-background-color:  #99ffcc;
+	-fx-border-color: black;
+}
+
+#greenButton:pressed{
+	-fx-background-color: #6bb39d;
+
+}
+
+
+#redButton {
+    -fx-background-color:   #ff9999;
+   
+}
+
+#redButton:hover{
+	-fx-background-color:   #ff9999;
+	-fx-border-color: black;
+}
+
+#redButton:pressed{
+	-fx-background-color: #b37e6b;
+
+}
+
+
+#pauseButton{
+	-fx-background-image: url("../images/pause_button_96px.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: auto;
+}
+
+#playButton{
+	-fx-background-image: url("../images/play_button_96px.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: auto;
+}
